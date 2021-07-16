@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function ShopCard({card}) {
   const background = { backgroundImage: 'url(' + card.img + ')' };
@@ -12,4 +13,8 @@ export default function ShopCard({card}) {
       </div>
     </div>
   );
+}
+
+ShopCard.propTypes = {
+  card: PropTypes.object,
 }

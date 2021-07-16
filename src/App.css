@@ -2,12 +2,27 @@
 .Store {
   width: 1200px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .CardsView {
   display: flex;
   flex-wrap: wrap;
+}
+
+.IconSwitch {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 15px 15px;
+}
+
+.IconSwitch-button {
+  color: grey;
+  cursor: pointer;
+}
+
+.IconSwitch-button .material-icons {
+  font-size: 36px;
 }
 
 .ShopCard {
@@ -48,5 +63,50 @@
   border: 2px solid rgb(161, 0, 0);
   border-radius: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ListView {
+  display: flex;
+  flex-direction: column;
+}
+
+.ShopItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+}
+
+.ShopItem-img {
+  width: 150px;
+  height: 80px;
+  background-size: 150px 150px;
+  background-position: 50% 70%;
+}
+
+.ShopItem-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  transform: scale(0.9, 1.4);
+}
+
+.ShopItem-price {
+  color: rgb(161, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ShopItem-button {
+  margin-right: 15px;
+  padding: 5px 10px;
+  border: 2px solid rgb(161, 0, 0);
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: rgb(161, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
