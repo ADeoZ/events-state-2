@@ -3,7 +3,7 @@ import IconSwitch from './IconSwitch';
 import CardsView from './CardsView';
 import ListView from './ListView';
 
-export default function Store () {
+export default function Store() {
   const products = [{
     name: "Nike Metcon 2",
     price: "130",
@@ -45,7 +45,7 @@ export default function Store () {
 
   return (
     <div className="Store">
-      <IconSwitch icon={viewModes[1 - view]} onSwitch={onSwitch}/>
+      <IconSwitch icon={viewModes[1 - view]} onSwitch={onSwitch} />
       {viewModes[view] === 'view_module' ? <CardsView cards={products} /> : <ListView items={products} />}
     </div>
   );

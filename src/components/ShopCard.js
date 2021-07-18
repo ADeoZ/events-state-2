@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function ShopCard({card}) {
+export default function ShopCard({ card }) {
   const background = { backgroundImage: 'url(' + card.img + ')' };
   return (
     <div className="ShopCard" style={background}>
@@ -16,5 +16,5 @@ export default function ShopCard({card}) {
 }
 
 ShopCard.propTypes = {
-  card: PropTypes.object,
+  card: PropTypes.object.isRequired,
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function IconSwitch({icon, onSwitch}) {
+export default function IconSwitch({ icon, onSwitch }) {
   return (
     <div className="IconSwitch">
       <div className="IconSwitch-button" onClick={onSwitch}><span className="material-icons">{icon}</span></div>
@@ -10,6 +10,6 @@ export default function IconSwitch({icon, onSwitch}) {
 }
 
 IconSwitch.propTypes = {
-  icon: PropTypes.string,
-  onSwitch: PropTypes.func,
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
 }

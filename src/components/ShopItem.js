@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function ShopItem({item}) {
+export default function ShopItem({ item }) {
   const background = { backgroundImage: 'url(' + item.img + ')' };
   return (
     <div className="ShopItem">
@@ -15,5 +15,5 @@ export default function ShopItem({item}) {
 }
 
 ShopItem.propTypes = {
-  item: PropTypes.object,
+  item: PropTypes.object.isRequired,
 }
